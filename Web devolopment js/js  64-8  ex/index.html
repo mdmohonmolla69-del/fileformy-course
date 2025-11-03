@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendom Bussnes Name Generetor</title>
+</head>
+<body>
+    <script>
+        let rand = Math.random()
+        let frist, second, third;
+        // 0 0.33 0.66 1
+        if(rand<0.33){
+            frist = "Crazy"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            frist = "Amazing"
+        }
+        else{
+            frist = "Fire"
+        }
+
+        rand = Math.random()
+        if(rand<0.33){
+            second = "Engine"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            second = "Foods"
+        }
+        else{
+            second = "Garments"
+        }
+
+        rand = Math.random()
+        if(rand<0.33){
+            third = "Bors"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            third = "limited"
+        }
+        else{
+            third = "Hub"
+        }
+        console.log(`${frist} ${second} ${third}`)  
+    </script>
+</body>
+</html>

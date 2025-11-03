@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: 2px solid black;
+    width: 40vw;
+    height: 75vw;
+}
