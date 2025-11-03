@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btncal {
+    background:  #f8e9e9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+}
+
+.container .btncal button {
+    height: 70px;
+    width: 80px;
+    background:  #f8e9e9;
+    outline: 0;
+    border: 0;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .btncal{
+    display: grid;
+       
+}
+
+.container .resultcal input[type="text"] {
+    width: 358px;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: right;
+    background-color:  #f8e9e9;
+    outline: 0;
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid #f8e9e9;
+    border-radius: 5px;
+}
+
+.container form {
+    background-color: #f8e9e9;
+    border-radius: 10px;
+    border: 2px solid #f8e9e9;
+}
