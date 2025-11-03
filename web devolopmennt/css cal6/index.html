@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing px, rem, em, vh, vw, %, &</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .continer {
+            box-sizing: border-box;
+            border: 2px solid rebeccapurple;
+            width: 80vw;
+            min-height: 80vw;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: antiquewhite;
+
+        }
+        .continer > div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+        .continer > div > div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycon {
+            box-sizing: border-box;
+            border: 2px solid red;
+            margin: 23px auto;
+            color: green;
+            font-size: 22px;
+            width: 80vw;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This an box
+    </div>
+    <div class="continer">
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur, rem dicta voluptatum, odit fugit enim doloribus officia assumenda autem ullam sapiente vero.
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quaerat dolores odio velit perspiciatis?
+            </div>
+        </div>
+    </div>
+   <div class="mycon">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aperiam! Veritatis, ex?
+   </div>
+</body>
+</html>

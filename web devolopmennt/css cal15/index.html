@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selector</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+         /* .box::first-line {
+            color: aquamarine;
+         } */
+          /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+          } */
+           /* [data-color="paymari"]{
+            padding-top: 45px;
+           } */
+            /* .box:nth-child(even){
+                background-color: blue;
+            } */
+            /* .box:nth-child(3){
+                background-color: red;
+            } */
+            .boxes::before{
+                content: "HELLO HOW";
+            }
+            .boxes::after{
+                content: "HELLO HOW ARE YO";
+            }
+            ::selection{
+                background-color: black;
+                color: aqua;
+            }
+            .box::first-letter{
+                color: peru;
+                font-size: 45px;
+            }
+            input::placeholder{
+                color: blue;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="paymari" class="box">Iam a box</div>
+        <div class="box">Iam a box</div>
+        <div class="box">Iam a box</div>
+        <input type="text" placeholder="HELLO">
+    </div>
+</body>
+</html>

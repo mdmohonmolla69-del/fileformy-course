@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        :root{
+            --color0: rgb(229, 255, 0);
+            --color1: rgb(25, 0, 255);
+            --color2: rgb(255, 0, 170);
+            --color3: rgb(0, 255, 213);
+            --color4: rgb(136, 255, 0);
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul{
+            
+            display: flex;
+            justify-content: center;
+            width: 280px;
+            border: 2px solid var(--color1);
+            margin: auto;
+            background-color: var(--color0);
+        }
+        ul li {
+            list-style: none;
+            padding: 13px;
+            margin: 3px;
+            border: 2px solid var(--color2);
+
+        }
+        ul li:first-child {
+            background-color: var(--color3);
+            border: 2px solid var(--color1);
+        }
+        ul li:nth-child(2) {
+            background-color: var(--color4);
+            border: 2px solid var(--color3);
+        }
+        ul li:nth-child(3) {
+            background-color: var(--color1);
+            border: 2px solid var(--color2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
